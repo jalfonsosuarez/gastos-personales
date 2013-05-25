@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jalfonsosuarez.gastospersonales"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jalfonsosuarez.gastospersonales.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jalfonsosuarez.gastospersonales.MenuPrincipal"
+            android:label="@string/title_activity_menu_principal" >
+        </activity>
+        <activity
+            android:name="com.jalfonsosuarez.gastospersonales.Movimientos"
+            android:label="@string/title_activity_movimientos" >
+        </activity>
+        <activity
+            android:name="com.jalfonsosuarez.gastospersonales.EditarMovimiento"
+            android:label="@string/title_activity_editar_movimiento" >
+        </activity>
+        <activity
+            android:name="com.jalfonsosuarez.gastospersonales.ProyectoEdit"
+            android:label="@string/title_activity_proyecto_edit" >
+        </activity>
+        <activity
+            android:name="com.jalfonsosuarez.gastospersonales.ConceptoEdit"
+            android:label="@string/title_activity_concepto_edit" >
+        </activity>
+        <activity
+            android:name="com.jalfonsosuarez.gastospersonales.MovimientosPorFecha"
+            android:label="@string/title_activity_movimientos_por_fecha"
+            android:parentActivityName="com.jalfonsosuarez.gastospersonales.MenuPrincipal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jalfonsosuarez.gastospersonales.MenuPrincipal" />
+        </activity>
+    </application>
+
+</manifest>
